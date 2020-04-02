@@ -4,7 +4,7 @@ const assertEqual = function(actual, expected) {
   actual === expected ? console.log(passed) : console.log(failed);
 };
 
-/* 
+/*
 const eqArrays = function(inputArray, testArray) {
   if (inputArray.length === testArray.length) {
     for (let i = 0; i < inputArray.length; i++) {
@@ -29,19 +29,19 @@ const eqObjects = function(object1, object2) {
   let keyLengthOfFirst = Object.keys(object1).length;
   let keyLengthSecond = Object.keys(object2).length;
   const isLengthEqual = (keyLengthOfFirst === keyLengthSecond);
-    if (isLengthEqual) {
-      for (let key1 in object1) {
-        for (let key2 in object2) {
-          if (key1 === key2) {
-            if (object1[key1] !== object2[key2]) {
-              return false;
-            }
-            return true;
+  if (isLengthEqual) {
+    for (let key1 in object1) {
+      for (let key2 in object2) {
+        if (key1 === key2) {
+          if (object1[key1] !== object2[key2]) {
+            return false;
           }
+          return true;
         }
       }
     }
-    return false;
+  }
+  return false;
 };
 
 
