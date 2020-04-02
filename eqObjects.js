@@ -35,8 +35,7 @@ const eqObjects = function(object1, object2) {
         if (key1 === key2) {
           if (object1[key1] !== object2[key2]) {
             return false;
-          }
-          return true;
+          } return true;
         }
       }
     }
