@@ -5,16 +5,7 @@
 };
 */
 
-const eqArrays = function(inputArray, testArray) {
-  if (inputArray.length === testArray.length) {
-    for (let i = 0; i < inputArray.length; i++) {
-      if (inputArray[i] !== testArray[i]) {
-        return false;
-      }
-    }
-    return true;
-  }
-};
+let eqArrays = require('../lotide/eqArrays');
 
 const assertArraysEqual = function(inputArray, testArray) {
   let eqArraysOutput = eqArrays(inputArray, testArray);
@@ -23,6 +14,4 @@ const assertArraysEqual = function(inputArray, testArray) {
   eqArraysOutput === true ? console.log(passed) : console.log(failed);
 };
 
-assertArraysEqual([1,2,3], [1]);
-assertArraysEqual([1, 2, 3], [1, 2, 3]);
-assertArraysEqual([1, 2, 3], [1, 2, "3"]);
+module.exports = assertArraysEqual;
