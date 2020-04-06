@@ -4,7 +4,6 @@
   actual === expected ? console.log(passed) : console.log(failed);
 };
 */
-const assertEqual = require('./assertEqual');
 const head = function(array) {
   let headOut = array.length >= 1 ? array[0] : undefined;
   return headOut;
