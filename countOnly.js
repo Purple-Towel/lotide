@@ -38,3 +38,5 @@ assertEqual(result1["Fang"], 2);
 assertEqual(result1["Jason"], 2);
 assertEqual(result1["Karima"], 1);
 assertEqual(result1["Fang"], 3);
+
+module.exports = countOnly;

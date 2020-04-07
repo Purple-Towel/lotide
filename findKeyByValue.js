@@ -30,3 +30,4 @@ assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
 
 assertEqual(findKeyByValue(topThreeVideoGames, "Dark Souls"), "first");
 assertEqual(findKeyByValue(topThreeVideoGames, "XCOM 2"), "fourth");
+module.exports = findKeyByValue;
